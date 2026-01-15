@@ -174,13 +174,13 @@
     <string name="fragmentAppInfo_description_text"> PixaPencil er et <a href="https://github.com/tomdoeslinux/PixaPencil">fritt</a> program for pikselredigering, 100% uten personvernshemmende Google Play-tjenester og irriterende reklame.
 \n
 \n For å ivareta dette anbefales det at du
-\ninstallerer programmet via <a href="https://f-droid.org/en/packages/com.therealbluepandabear.pixapencil/">F-Droid</a> eller <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHub</a>. </string>
+\ninstallerer programmet via <a href="https://f-droid.org/en/packages/com.bertandfrogs.pixapencil/">F-Droid</a> eller <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHub</a>. </string>
     <string name="fragmentAppInfo_created_by_text">Laget av <a href="https://github.com/therealbluepandabear">thebluepandabear</a>.</string>
     <string name="dither_tool_info_title">Utjevningsverktøyinfo</string>
     <string name="fragmentAppInfo_description_text_land">PixaPencil er et <a href="https://github.com/tomdoeslinux/PixaPencil">fritt</a> program for pikselredigering, 100% uten personvernshemmende Google Play-tjenester og irriterende reklame.
 \n
 \nFor å ivareta dette anbefales det at du
-\ninstallerer programmet via <a href="https://f-droid.org/en/packages/com.therealbluepandabear.pixapencil/">F-Droid</a> eller <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHub</a>.</string>
+\ninstallerer programmet via <a href="https://f-droid.org/en/packages/com.bertandfrogs.pixapencil/">F-Droid</a> eller <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHub</a>.</string>
     <string name="move_tool_info_text">Flytt lerretet rundt ved å holde fingeren på skjermen samtidig som du drar.</string>
     <string name="move_tool_info_title">Flyttingsverktøyinfo</string>
     <string name="activityMainBottomSheet_duplicate">Dupliser</string>

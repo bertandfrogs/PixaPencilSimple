@@ -50,7 +50,7 @@
     <string name="fragmentAppInfo_description_text"> PixaPencil jest <a href="https://github.com/tomdoeslinux/PixaPencil">otwartoźródłowym</a> edytorem pixel artów, w 100% wolnym od naruszających prywatność Usług Google Play oraz irytujących reklam.
 \n
 \n Aby to zagwarantować, zalecamy,
-\nżeby aplikację pobrać z repozytorium <a href="https://f-droid.org/en/packages/com.therealbluepandabear.pixapencil/">F-Droid</a> lub z <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHuba</a>. </string>
+\nżeby aplikację pobrać z repozytorium <a href="https://f-droid.org/en/packages/com.bertandfrogs.pixapencil/">F-Droid</a> lub z <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHuba</a>. </string>
     <string name="activityCanvas_tab_brushes">Pędzle</string>
     <string name="activityCanvas_tab_filters">Filtry</string>
     <string name="activityCanvas_tab_tools">Narzędzia</string>
@@ -127,5 +127,5 @@
     <string name="fragmentAppInfo_description_text_land">PixaPencil jest <a href="https://github.com/tomdoeslinux/PixaPencil">otwartoźródłowym</a> edytorem pixel artów, w 100% wolnym od naruszających prywatność Usług Google Play oraz irytujących reklam.
 \n
 \nAby to zagwarantować, zalecamy,
-\nżeby aplikację pobrać z repozytorium <a href="https://f-droid.org/en/packages/com.therealbluepandabear.pixapencil/">F-Droid</a> lub z <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHuba</a>.</string>
+\nżeby aplikację pobrać z repozytorium <a href="https://f-droid.org/en/packages/com.bertandfrogs.pixapencil/">F-Droid</a> lub z <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHuba</a>.</string>
 </resources>

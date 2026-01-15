@@ -20,7 +20,7 @@
 
     <!-- The ColorSwitcherView is a view I created which helps
          simplify the code for controlling the user's primary/secondary color -->
-    <com.therealbluepandabear.pixapencil.customviews.colorswitcherview.ColorSwitcherView
+    <com.bertandfrogs.pixapencil.customviews.colorswitcherview.ColorSwitcherView
         android:elevation="20dp"
         android:outlineProvider="none"
         android:id="@+id/activityCanvas_colorSwitcherView"
@@ -71,12 +71,12 @@
         app:layout_constraintStart_toEndOf="@+id/activityCanvas_topView"
         app:layout_constraintTop_toTopOf="parent">
         <!-- At runtime, the width and height of the TransparentBackgroundView and PixelGridView will be calculated -->
-        <com.therealbluepandabear.pixapencil.customviews.transparentbackgroundview.TransparentBackgroundView
+        <com.bertandfrogs.pixapencil.customviews.transparentbackgroundview.TransparentBackgroundView
             android:id="@+id/activityCanvas_transparentBackgroundView"
             android:layout_width="0dp"
             android:layout_height="0dp" />
 
-        <com.therealbluepandabear.pixapencil.customviews.pixelgridview.PixelGridView
+        <com.bertandfrogs.pixapencil.customviews.pixelgridview.PixelGridView
             android:id="@+id/activityCanvas_pixelGridView"
             android:layout_width="0dp"
             android:layout_height="0dp" />

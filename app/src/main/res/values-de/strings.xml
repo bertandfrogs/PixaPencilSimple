@@ -187,11 +187,11 @@
     <string name="fragmentAppInfo_description_text"> PixaPencil ist ein <a href="https://github.com/tomdoeslinux/PixaPencil">quelloffener</a> Pixel-Art-Editor, ohne Google Play Services und ohne Werbung.
 \n
 \n Um dies sicherzustellen, ist es empfehlenswert, die App
-\n via <a href="https://f-droid.org/en/packages/com.therealbluepandabear.pixapencil/">F-Droid</a> oder via <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHub</a> zu installieren. </string>
+\n via <a href="https://f-droid.org/en/packages/com.bertandfrogs.pixapencil/">F-Droid</a> oder via <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHub</a> zu installieren. </string>
     <string name="fragmentAppInfo_created_by_text">Erstellt von <a href="https://github.com/therealbluepandabear">thebluepandabear</a>.</string>
     <string name="fragmentAppInfo_description_text_land">PixaPencil ist ein <a href="https://github.com/tomdoeslinux/PixaPencil">quelloffener</a> Pixel-Art-Editor, ohne Google Play Services und ohne Werbung.
 \n
 \n Um dies sicherzustellen, ist es empfehlenswert, die App
-\n via <a href="https://f-droid.org/en/packages/com.therealbluepandabear.pixapencil/">F-Droid</a> oder via <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHub</a> zu installieren.</string>
+\n via <a href="https://f-droid.org/en/packages/com.bertandfrogs.pixapencil/">F-Droid</a> oder via <a href="https://github.com/tomdoeslinux/PixaPencil/releases/latest">GitHub</a> zu installieren.</string>
     <string name="move_tool_info_title">Werkzeug-Info bewegen</string>
 </resources>
