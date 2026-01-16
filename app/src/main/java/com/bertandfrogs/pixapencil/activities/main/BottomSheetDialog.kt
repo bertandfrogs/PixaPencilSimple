@@ -55,6 +55,10 @@ class BottomSheetDialog : BottomSheetDialogFragment() {
     }
 
     private fun setup() {
+        binding.activityMainBottomSheetRename.setOnClickListener {
+            caller.onRenameTapped(pixelArt, this)
+        }
+
         binding.activityMainBottomSheetDuplicate.setOnClickListener {
             caller.onDuplicateTapped(pixelArt, this)
         }

@@ -22,6 +22,7 @@ import com.bertandfrogs.pixapencil.activities.main.BottomSheetDialog
 import com.bertandfrogs.pixapencil.models.PixelArt
 
 interface BottomSheetDialogListener {
+    fun onRenameTapped(pixelArt: PixelArt, bottomSheetDialog: BottomSheetDialog)
     fun onDuplicateTapped(pixelArt: PixelArt, bottomSheetDialog: BottomSheetDialog)
     fun onViewDetailsTapped(pixelArt: PixelArt)
     fun onDeleteTapped(pixelArt: PixelArt, bottomSheetDialog: BottomSheetDialog)

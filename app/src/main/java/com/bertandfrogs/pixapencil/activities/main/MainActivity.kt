@@ -27,6 +27,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.takusemba.spotlight.Spotlight
 import com.bertandfrogs.pixapencil.activities.main.bottomsheet.extendedOnDeleteTapped
 import com.bertandfrogs.pixapencil.activities.main.bottomsheet.extendedOnDuplicateTapped
+import com.bertandfrogs.pixapencil.activities.main.bottomsheet.extendedOnRenameTapped
 import com.bertandfrogs.pixapencil.activities.main.bottomsheet.extendedOnViewDetailsTapped
 import com.bertandfrogs.pixapencil.activities.main.oncreate.root.extendedOnCreate
 import com.bertandfrogs.pixapencil.activities.main.viewmodel.PixelArtViewModel
@@ -92,6 +93,10 @@ class MainActivity : AppCompatActivity(), RecentCreationsListener, NewProjectFra
 
     override fun onDeleteTapped(pixelArt: PixelArt, bottomSheetDialog: BottomSheetDialog) {
         extendedOnDeleteTapped(pixelArt, bottomSheetDialog)
+    }
+
+    override fun onRenameTapped(pixelArt: PixelArt) {
+        extendedOnRenameTapped(pixelArt, BottomSheetDialog.newInstance(pixelArt))
     }
 }
 

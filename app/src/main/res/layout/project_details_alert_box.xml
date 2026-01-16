@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/DuplicateLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -21,9 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:text="@string/projectDetailsAlertBox_height"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="@+id/DuplicateLabel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="@+id/DuplicateLabel" />
 
     <TextView
         android:id="@+id/projectDetailsAlertBox_height"
@@ -60,8 +60,8 @@
         android:layout_marginTop="32dp"
         android:text="@string/projectDetailsAlertBox_height"
         android:fontFamily="sans-serif-black"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toStartOf="@+id/DuplicateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/DuplicateLabel" />
 
     <TextView
         android:id="@+id/textView6"
@@ -70,7 +70,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/projectDetailsAlertBox_created"
         android:fontFamily="sans-serif-black"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/DuplicateLabel"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
@@ -82,6 +82,6 @@
         android:text="@string/projectDetailsAlertBox_colors"
         android:fontFamily="sans-serif-black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/DuplicateLabel"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </androidx.constraintlayout.widget.ConstraintLayout>

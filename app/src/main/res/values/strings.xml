@@ -27,6 +27,7 @@
     <string name="recentCreationsLayout_imageView_content_description">Pixel Art Preview</string>
     <string name="colorPalettesLayout_color_palette_item">Color Palette Item</string>
 
+    <string name="activityMainBottomSheet_rename">Rename</string>
     <string name="activityMainBottomSheet_duplicate">Duplicate</string>
     <string name="activityMainBottomSheet_view_details">View Details</string>
     <string name="activityMainBottomSheet_delete">Delete</string>
