@@ -95,8 +95,8 @@ class MainActivity : AppCompatActivity(), RecentCreationsListener, NewProjectFra
         extendedOnDeleteTapped(pixelArt, bottomSheetDialog)
     }
 
-    override fun onRenameTapped(pixelArt: PixelArt) {
-        extendedOnRenameTapped(pixelArt, BottomSheetDialog.newInstance(pixelArt))
+    override fun onRenameTapped(pixelArt: PixelArt, bottomSheetDialog: BottomSheetDialog) {
+        extendedOnRenameTapped(pixelArt, bottomSheetDialog)
     }
 }
 

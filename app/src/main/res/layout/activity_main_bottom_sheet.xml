@@ -5,6 +5,43 @@
     android:id="@+id/activityMainBottomSheet_root"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!--Rename-->
+    <View
+        android:id="@+id/activityMainBottomSheet_rename"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/duplicateText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/renameImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_pencil_24"
+        android:contentDescription="@string/activityMainBottomSheet_rename"
+        app:tint="@color/black_color_daynight" />
+
+    <TextView
+        android:id="@+id/renameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/activityMainBottomSheet_rename"
+        android:textColor="@color/black_color_daynight"
+        app:layout_constraintBottom_toBottomOf="@+id/renameImage"
+        app:layout_constraintStart_toEndOf="@+id/duplicateImage"
+        app:layout_constraintTop_toTopOf="@+id/renameImage" />
+
     <!--Duplicate-->
     <View
         android:id="@+id/activityMainBottomSheet_duplicate"
@@ -14,32 +51,32 @@
         android:background="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintBottom_toTopOf="@+id/detailsText"
+        app:layout_constraintBottom_toTopOf="@+id/viewText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/activityMainBottomSheet_rename" />
 
     <ImageView
-        android:id="@+id/viewImage"
+        android:id="@+id/duplicateImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="@+id/duplicateImage"
-        app:layout_constraintTop_toBottomOf="@+id/duplicateImage"
-        app:srcCompat="@drawable/ic_baseline_image_24"
-        android:contentDescription="@string/activityMainBottomSheet_view_details"
+        app:layout_constraintStart_toStartOf="@+id/renameImage"
+        app:layout_constraintTop_toBottomOf="@+id/renameImage"
+        app:srcCompat="@drawable/ic_baseline_content_copy_24"
+        android:contentDescription="@string/activityMainBottomSheet_duplicate"
         app:tint="@color/black_color_daynight" />
 
     <TextView
-        android:id="@+id/detailsText"
+        android:id="@+id/duplicateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="@string/activityMainBottomSheet_view_details"
+        android:text="@string/activityMainBottomSheet_duplicate"
         android:textColor="@color/black_color_daynight"
-        app:layout_constraintBottom_toBottomOf="@+id/viewImage"
-        app:layout_constraintStart_toEndOf="@+id/viewImage"
-        app:layout_constraintTop_toTopOf="@+id/viewImage" />
+        app:layout_constraintBottom_toBottomOf="@+id/duplicateImage"
+        app:layout_constraintStart_toEndOf="@+id/duplicateImage"
+        app:layout_constraintTop_toTopOf="@+id/duplicateImage" />
 
     <!--View Details-->
     <View
@@ -56,27 +93,26 @@
         app:layout_constraintTop_toBottomOf="@+id/activityMainBottomSheet_duplicate" />
 
     <ImageView
-        android:id="@+id/duplicateImage"
+        android:id="@+id/viewImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_content_copy_24"
-        android:contentDescription="@string/activityMainBottomSheet_duplicate"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/duplicateImage"
+        app:layout_constraintTop_toBottomOf="@+id/duplicateImage"
+        app:srcCompat="@drawable/ic_baseline_image_24"
+        android:contentDescription="@string/activityMainBottomSheet_view_details"
         app:tint="@color/black_color_daynight" />
 
     <TextView
-        android:id="@+id/duplicateText"
+        android:id="@+id/viewText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="@string/activityMainBottomSheet_duplicate"
+        android:text="@string/activityMainBottomSheet_view_details"
         android:textColor="@color/black_color_daynight"
-        app:layout_constraintBottom_toBottomOf="@+id/duplicateImage"
+        app:layout_constraintBottom_toBottomOf="@+id/viewImage"
         app:layout_constraintStart_toEndOf="@+id/viewImage"
-        app:layout_constraintTop_toTopOf="@+id/duplicateImage" />
+        app:layout_constraintTop_toTopOf="@+id/viewImage" />
 
     <!--Delete-->
     <View
@@ -98,7 +134,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/duplicateImage"
+        app:layout_constraintStart_toStartOf="@+id/viewImage"
         app:layout_constraintTop_toBottomOf="@+id/viewImage"
         app:srcCompat="@drawable/ic_baseline_delete_24"
         android:contentDescription="@string/activityMainBottomSheet_delete"

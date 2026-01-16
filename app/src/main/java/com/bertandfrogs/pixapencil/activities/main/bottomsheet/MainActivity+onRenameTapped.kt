@@ -9,12 +9,12 @@ import com.bertandfrogs.pixapencil.models.PixelArt
 
 fun MainActivity.extendedOnRenameTapped(pixelArt: PixelArt, bottomSheetDialog: BottomSheetDialog) {
     bottomSheetDialog.dismiss()
-    pixelArtViewModel.delete(pixelArt)
-
-    binding.activityMainCoordinatorLayout.showSnackbarWithAction(
-        getString(R.string.dialog_delete_pixel_art_project_deleted_text, pixelArt.title),
-        SnackbarDuration.Long,
-        getString(R.string.activityCanvasTopAppMenu_undo)) {
-        pixelArtViewModel.insert(pixelArt)
-    }
+//    pixelArtViewModel.delete(pixelArt)
+//
+//    binding.activityMainCoordinatorLayout.showSnackbarWithAction(
+//        getString(R.string.dialog_delete_pixel_art_project_deleted_text, pixelArt.title),
+//        SnackbarDuration.Long,
+//        getString(R.string.activityCanvasTopAppMenu_undo)) {
+//        pixelArtViewModel.insert(pixelArt)
+//    }
 }
