@@ -200,7 +200,7 @@
     <string name="shading_tool_info_text">Lighten/darken pixels on your canvas</string>
 
     <!-- Exception strings -->
-    <string name="exception_invalid_project_name">Name cannot be empty</string>
+    <string name="exception_invalid_project_name">Name must be less than 50 characters</string>
     <string name="exception_invalid_width">Value must be between 1 and 10,000</string>
     <string name="exception_invalid_height">Value must be between 1 and 10,000</string>
     <string name="exception_invalid_spray_radius">Value must be between 2 and 10,000</string>
@@ -369,4 +369,8 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="activityMain_rename_pixel_art_str">Rename</string>
+    <string name="generic_done_str">Successfully renamed drawing</string>
+    <string name="generic_cancel_str">Canceled</string>
+    <string name="untitled">Untitled</string>
 </resources>

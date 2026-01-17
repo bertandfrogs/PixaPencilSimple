@@ -39,7 +39,7 @@
         android:text="@string/activityMainBottomSheet_rename"
         android:textColor="@color/black_color_daynight"
         app:layout_constraintBottom_toBottomOf="@+id/renameImage"
-        app:layout_constraintStart_toEndOf="@+id/duplicateImage"
+        app:layout_constraintStart_toEndOf="@+id/renameImage"
         app:layout_constraintTop_toTopOf="@+id/renameImage" />
 
     <!--Duplicate-->
@@ -148,9 +148,7 @@
         android:text="@string/activityMainBottomSheet_delete"
         android:textColor="@color/black_color_daynight"
         app:layout_constraintBottom_toBottomOf="@+id/deleteImage"
-        app:layout_constraintStart_toEndOf="@+id/viewImage"
+        app:layout_constraintStart_toEndOf="@+id/deleteImage"
         app:layout_constraintTop_toTopOf="@+id/deleteImage" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

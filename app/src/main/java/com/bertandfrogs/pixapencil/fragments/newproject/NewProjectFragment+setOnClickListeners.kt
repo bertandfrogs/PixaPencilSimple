@@ -36,7 +36,7 @@ private var invalidHeight = false
 private fun NewProjectFragment.checkForTitleError() {
     val title = binding.fragmentNewCanvasProjectTitleTextInputEditText.text.toString()
 
-    if (title.isBlank()) {
+    if (title.length >= 50) {
         binding.fragmentNewCanvasProjectTitleTextInputLayout.error = getString(R.string.exception_invalid_project_name)
         invalidTitle = true
     } else {
@@ -118,8 +118,11 @@ fun NewProjectFragment.setOnClickListeners() {
                     binding.fragmentNewCanvasWidthTextInputEditText.hideSoftInput()
                     binding.fragmentNewCanvasHeightTextInputEditText.hideSoftInput()
 
-                    val title =
-                        binding.fragmentNewCanvasProjectTitleTextInputEditText.text.toString()
+                    var title = binding.fragmentNewCanvasProjectTitleTextInputEditText.text.toString()
+                    if (title.isEmpty()) {
+                        title = getString(R.string.untitled)
+                    }
+
                     val widthValue: Int =
                         binding.fragmentNewCanvasWidthTextInputEditText.text.toString().toInt()
                     val heightValue: Int =
