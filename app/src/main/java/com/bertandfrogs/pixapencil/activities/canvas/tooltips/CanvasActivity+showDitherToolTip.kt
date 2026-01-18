@@ -24,6 +24,7 @@ import com.bertandfrogs.pixapencil.activities.canvas.preferences.applyShowDither
 import com.bertandfrogs.pixapencil.enums.SnackbarDuration
 import com.bertandfrogs.pixapencil.extensions.showSnackbarWithActionAndCallback
 import com.bertandfrogs.pixapencil.utility.constants.StringConstants
+import androidx.core.content.edit
 
 fun CanvasActivity.showDitherToolTip() {
     binding.activityCanvasCoordinatorLayout.showSnackbarWithActionAndCallback(
@@ -31,22 +32,20 @@ fun CanvasActivity.showDitherToolTip() {
         SnackbarDuration.Medium,
         getString(R.string.tool_tip_dont_show_again),
         {
-            with(sharedPreferenceObject.edit()) {
+            sharedPreferenceObject.edit {
                 putBoolean(
                     StringConstants.Identifiers.SHARED_PREFERENCE_SHOW_DITHER_TOOLTIP_IDENTIFIER,
                     false
                 )
-                apply()
             }
             applyShowDitherToolTipFromPreference()
         }
     ) {
-        with(sharedPreferenceObject.edit()) {
+        sharedPreferenceObject.edit {
             putBoolean(
                 StringConstants.Identifiers.SHARED_PREFERENCE_SHOW_DITHER_TOOLTIP_IDENTIFIER,
                 false
             )
-            apply()
         }
         applyShowDitherToolTipFromPreference()
     }

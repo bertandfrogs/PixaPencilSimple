@@ -24,6 +24,7 @@ import com.bertandfrogs.pixapencil.activities.canvas.preferences.applyShowSprayT
 import com.bertandfrogs.pixapencil.enums.SnackbarDuration
 import com.bertandfrogs.pixapencil.extensions.showSnackbarWithActionAndCallback
 import com.bertandfrogs.pixapencil.utility.constants.StringConstants
+import androidx.core.content.edit
 
 fun CanvasActivity.showSprayToolTip() {
     binding.activityCanvasCoordinatorLayout.showSnackbarWithActionAndCallback(
@@ -31,22 +32,20 @@ fun CanvasActivity.showSprayToolTip() {
         SnackbarDuration.Medium,
         getString(R.string.tool_tip_dont_show_again),
         {
-            with(sharedPreferenceObject.edit()) {
+            sharedPreferenceObject.edit {
                 putBoolean(
                     StringConstants.Identifiers.SHARED_PREFERENCE_SHOW_SPRAY_TOOLTIP_IDENTIFIER,
                     false
                 )
-                apply()
             }
             applyShowSprayToolTipValueFromPreference()
         }
     ) {
-        with(sharedPreferenceObject.edit()) {
+        sharedPreferenceObject.edit {
             putBoolean(
                 StringConstants.Identifiers.SHARED_PREFERENCE_SHOW_SPRAY_TOOLTIP_IDENTIFIER,
                 false
             )
-            apply()
         }
         applyShowSprayToolTipValueFromPreference()
     }

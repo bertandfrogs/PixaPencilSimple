@@ -106,7 +106,7 @@ fun CanvasActivity.extendedOnToolTapped(toolName: String) {
             }
         }
 
-        binding.activityCanvasCoordinatorLayout.showSnackbar(snackbarText, SnackbarDuration.Short)
+        binding.activityCanvasCoordinatorLayout?.showSnackbar(snackbarText, SnackbarDuration.Short)
     }
 
     if (toolName == StringConstants.Identifiers.POLYGON_TOOL_IDENTIFIER && viewModel.currentTool == Tool.PolygonTool) {
@@ -122,7 +122,7 @@ fun CanvasActivity.extendedOnToolTapped(toolName: String) {
         removeOnTouchListener()
     }
 
-    viewModel.currentTool = Tool.values().firstOrNull {
+    viewModel.currentTool = Tool.entries.firstOrNull {
         it.toolName == toolName
     } ?: Tool.PencilTool
 }

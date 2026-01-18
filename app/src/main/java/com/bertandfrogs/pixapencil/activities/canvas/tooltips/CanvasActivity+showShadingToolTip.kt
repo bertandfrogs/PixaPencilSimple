@@ -24,6 +24,7 @@ import com.bertandfrogs.pixapencil.activities.canvas.preferences.applyShowShadin
 import com.bertandfrogs.pixapencil.enums.SnackbarDuration
 import com.bertandfrogs.pixapencil.extensions.showSnackbarWithActionAndCallback
 import com.bertandfrogs.pixapencil.utility.constants.StringConstants
+import androidx.core.content.edit
 
 fun CanvasActivity.showShadingToolTip() {
     binding.activityCanvasCoordinatorLayout.showSnackbarWithActionAndCallback(
@@ -31,22 +32,20 @@ fun CanvasActivity.showShadingToolTip() {
         SnackbarDuration.Medium,
         getString(R.string.tool_tip_dont_show_again),
         {
-            with(sharedPreferenceObject.edit()) {
+            sharedPreferenceObject.edit {
                 putBoolean(
                     StringConstants.Identifiers.SHARED_PREFERENCE_SHOW_SHADING_TOOLTIP_IDENTIFIER,
                     false
                 )
-                apply()
             }
             applyShowShadingToolTipValueFromPreference()
         }
     ) {
-        with(sharedPreferenceObject.edit()) {
+        sharedPreferenceObject.edit {
             putBoolean(
                 StringConstants.Identifiers.SHARED_PREFERENCE_SHOW_SHADING_TOOLTIP_IDENTIFIER,
                 false
             )
-            apply()
         }
         applyShowShadingToolTipValueFromPreference()
     }

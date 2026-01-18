@@ -155,11 +155,10 @@
 
     <!-- All of the full page fragments will be displayed in this fragment host -->
     <FrameLayout
-        android:elevation="20dp"
-        android:outlineProvider="none"
         android:id="@+id/activityCanvas_primaryFragmentHost"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:elevation="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
