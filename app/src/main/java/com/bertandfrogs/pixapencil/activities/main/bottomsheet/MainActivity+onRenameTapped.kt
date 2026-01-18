@@ -27,8 +27,8 @@ fun MainActivity.extendedOnRenameTapped(pixelArt: PixelArt, bottomSheetDialog: B
             if (nameProjectAlertBinding.nameProjectAlertNameTextInputEditText.text?.isNotEmpty() == true) {
                 val newTitle = nameProjectAlertBinding.nameProjectAlertNameTextInputEditText.text.toString()
                 if (newTitle.isNotBlank() && newTitle.length <= 50) {
-                    pixelArt.title = newTitle
-                    pixelArtViewModel.update(pixelArt)
+                    val newPixelArt = pixelArt.copy(title = newTitle)
+                    pixelArtViewModel.update(newPixelArt)
                     bottomSheetDialog.dismiss()
                 }
             }

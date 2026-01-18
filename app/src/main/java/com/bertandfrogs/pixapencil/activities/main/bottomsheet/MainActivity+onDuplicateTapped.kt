@@ -24,12 +24,12 @@ import com.bertandfrogs.pixapencil.models.PixelArt
 
 fun MainActivity.extendedOnDuplicateTapped(pixelArt: PixelArt, bottomSheetDialog: BottomSheetDialog) {
     val duplicatedPixelArt = PixelArt(
-        pixelArt.coverBitmapFilePath,
-        pixelArt.bitmap,
-        pixelArt.width,
-        pixelArt.height,
-        pixelArt.title,
-        pixelArt.starred
+        coverBitmapFilePath = pixelArt.coverBitmapFilePath,
+        bitmap = pixelArt.bitmap,
+        width = pixelArt.width,
+        height = pixelArt.height,
+        title = pixelArt.title,
+        starred = pixelArt.starred
     )
 
     pixelArtViewModel.insert(duplicatedPixelArt)

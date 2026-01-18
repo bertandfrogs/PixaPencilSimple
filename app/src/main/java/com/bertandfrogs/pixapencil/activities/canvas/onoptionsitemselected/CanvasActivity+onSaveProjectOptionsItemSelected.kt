@@ -43,12 +43,12 @@ fun CanvasActivity.onSaveProjectOptionsItemSelected() {
         CoroutineScope(Dispatchers.IO).launch {
             AppData.pixelArtDB.dao().insert(
                 PixelArt(
-                    coverBitmapFilePath,
-                    BitmapConverter.convertBitmapToString(drawPixelGridViewBitmap()),
-                    drawPixelGridViewBitmap().width,
-                    drawPixelGridViewBitmap().height,
-                    title.toString(),
-                    false
+                    coverBitmapFilePath = coverBitmapFilePath,
+                    bitmap = BitmapConverter.convertBitmapToString(drawPixelGridViewBitmap()),
+                    width = drawPixelGridViewBitmap().width,
+                    height = drawPixelGridViewBitmap().height,
+                    title = title.toString(),
+                    starred = false
                 )
             )
         }

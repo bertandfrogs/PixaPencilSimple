@@ -41,12 +41,12 @@ fun CanvasActivity.onSaveInBackgroundOptionsItemSelected() {
 
     if (index == -1) {
         val pixelArt = PixelArt(
-            coverBitmapFilePath,
-            BitmapConverter.convertBitmapToString(drawPixelGridViewBitmap()),
-            width,
-            height,
-            title.toString(),
-            false
+            coverBitmapFilePath = coverBitmapFilePath,
+            bitmap = BitmapConverter.convertBitmapToString(drawPixelGridViewBitmap()),
+            width = width,
+            height = height,
+            title = title.toString(),
+            starred = false
         )
         CoroutineScope(Dispatchers.IO).launch {
             AppData.pixelArtDB.dao().insert(pixelArt)
